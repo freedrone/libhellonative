@@ -1,1 +1,1 @@
-& "$env:JAVA_HOME\bin\javac" -h "." "..\..\tests\java\src\LibXJNI.java"
+& "$env:JAVA_HOME\bin\javac" -h "." "core\LibXJNI.java"

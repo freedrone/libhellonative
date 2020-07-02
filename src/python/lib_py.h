@@ -2,10 +2,10 @@
 // Created by cihan on 01/07/2020.
 //
 
-#ifndef LIBSRC_LIB_PY_H
-#define LIBSRC_LIB_PY_H
+#ifndef LIBHELLONATIVE_LIB_PY_H
+#define LIBHELLONATIVE_LIB_PY_H
 
 #include <boost/python.hpp>
-#include "../src/library.h"
+#include "../core/library.h"
 
-#endif //LIBSRC_LIB_PY_H
+#endif //LIBHELLONATIVE_LIB_PY_H

@@ -3,7 +3,7 @@
 //
 
 #include "LibXJNI.h"
-#include "../src/library.h"
+#include "../core/library.h"
 
 JNIEXPORT void JNICALL Java_LibXJNI_hello (JNIEnv* _env, jobject _this)
 {
