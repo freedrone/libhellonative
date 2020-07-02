@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.16)
-project(libsrc)
+project(libhellonative)
 
 set(CMAKE_CXX_STANDARD 20)
 set(ENV{BOOST_ROOT} "boost")
@@ -18,12 +18,13 @@ include_directories(BEFORE "$ENV{PYTHONPATH}" "${Boost_INCLUDE_DIRS}")
 message(STATUS "Boost_VERSION: ${Boost_VERSION}")
 
 add_library(
-        libsrc
+        libhellonative
         SHARED
-        src/library.cpp src/library.h
+        src/src/library.cpp src/src/library.h
 )
-target_link_libraries(libsrc ${Boost_LIBRARIES})
-set_target_properties(libsrc
+target_link_libraries(libhellonative ${Boost_LIBRARIES})
+set_target_properties(
+        libhellonative
         PROPERTIES
         ARCHIVE_OUTPUT_DIRECTORY "./_lib"
         LIBRARY_OUTPUT_DIRECTORY "./_lib"
